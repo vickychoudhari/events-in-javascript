@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <style type="text/css">
+        .one{
+            color:black;
+        }
+.one{
+    color: brown !important;
+}
+        }
+    </style>
+</head>
+<body>
+    <p class="one">HEllo kiran</p>
+    <button>show</button>
+    <div> sunaina </div> 
+</body>
+<script type="text/javascript">
+// let isclick ="";
+let isclick =false;
+let vishal = document.querySelector("button");
+let sunaina = document.querySelector("p");
+let kiran = document.querySelector("div");
+showhide();
+let vicky =document.querySelector("body");
+vishal.addEventListener("click",vicku);
+function vicku(){
+isclick = !isclick;
+bgchange();
+showhide(); 
+textchange()
+}
+function bgchange(){
+    if(isclick) {
+        vicky.style.backgroundColor ="red";
+        kiran.style.backgroundColor ="green";
+    }
+    else{
+        vicky.style.backgroundColor ="white";
+        kiran.style.backgroundColor ="white";
+    }
+}
+
+function showhide(){
+    if(isclick){
+        sunaina.style.display ="block";
+    }
+    else {
+        sunaina.style.display ="none";
+    }
+}
+function textchange(){
+    if(isclick){
+        vishal.innerHTML ="hide";
+    }
+    else{
+        vishal.innerHTML ="show";
+    }
+}
+
+
+</script>
+</html>
